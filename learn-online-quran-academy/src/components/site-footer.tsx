@@ -3,10 +3,11 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 const quickLinks = [
-  { href: "#features", label: "Why Us" },
-  { href: "#courses", label: "Courses" },
-  { href: "#enroll", label: "Free Trial" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#features", label: "Why Us" },
+  { href: "/#courses", label: "Courses" },
+  { href: "/#enroll", label: "Free Trial" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 const whatsappIconPath =
