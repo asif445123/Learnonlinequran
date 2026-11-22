@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --font-inter: "Inter", system-ui, sans-serif;
+  --font-amiri: "Amiri", serif;
+}
+
 body {
   @apply bg-white text-slate-800 antialiased;
 }

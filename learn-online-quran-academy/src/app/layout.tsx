@@ -1,16 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Amiri } from "next/font/google";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/inter/800.css";
+import "@fontsource/amiri/arabic-400.css";
+import "@fontsource/amiri/arabic-700.css";
+import "@fontsource/amiri/400.css";
+import "@fontsource/amiri/700.css";
 import "./globals.css";
 import { siteConfig, faqs } from "@/lib/site-config";
 import WhatsappButton from "@/components/whatsapp-button";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const amiri = Amiri({
-  subsets: ["arabic", "latin"],
-  weight: ["400", "700"],
-  variable: "--font-amiri",
-  display: "swap",
-});
 
 export const viewport: Viewport = {
   themeColor: "#047857",
@@ -93,7 +93,7 @@ const jsonLd = [
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${amiri.variable}`}>
+    <html lang="en">
       <body className="font-sans">
         <script
           type="application/ld+json"
