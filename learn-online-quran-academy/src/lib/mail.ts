@@ -31,7 +31,7 @@ function getTransporter() {
 
 export async function sendResetEmail(to: string, resetUrl: string) {
   const transporter = getTransporter();
-  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "EasyCash";
+  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "Learn Online Quran Academy";
 
   try {
     const info = await transporter.sendMail({
@@ -79,8 +79,8 @@ export async function sendResetEmail(to: string, resetUrl: string) {
  */
 export async function sendContactMessage(name: string, fromEmail: string, message: string) {
   const transporter = getTransporter();
-  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "EasyCash";
-  const recipient = process.env.CONTACT_EMAIL || "masifrana445@gmail.com";
+  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "Learn Online Quran Academy";
+  const recipient = process.env.CONTACT_EMAIL || "faisalnazir2526@gmail.com";
 
   try {
     await transporter.sendMail({
