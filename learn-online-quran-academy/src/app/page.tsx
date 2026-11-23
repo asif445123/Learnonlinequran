@@ -4,6 +4,7 @@ import FeaturesSection from "@/components/features-section";
 import CoursesSection from "@/components/courses-section";
 import EnrollSection from "@/components/enroll-section";
 import FaqSection from "@/components/faq-section";
+import ContactSection from "@/components/contact-section";
 import SiteFooter from "@/components/site-footer";
 
 export default function HomePage() {
@@ -16,6 +17,7 @@ export default function HomePage() {
         <CoursesSection />
         <EnrollSection />
         <FaqSection />
+        <ContactSection />
       </main>
       <SiteFooter />
     </>

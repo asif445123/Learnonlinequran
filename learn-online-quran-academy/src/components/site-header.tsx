@@ -7,6 +7,7 @@ const links = [
   { href: "#courses", label: "Courses" },
   { href: "#enroll", label: "Free Trial" },
   { href: "#faq", label: "FAQ" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function SiteHeader() {
