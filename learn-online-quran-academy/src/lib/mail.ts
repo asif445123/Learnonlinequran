@@ -55,7 +55,7 @@ export async function sendResetEmail(to: string, resetUrl: string) {
 
     // Some SMTP servers accept the connection but reject an individual
     // recipient without throwing. Treat that as a failed delivery attempt.
-    const recipientAccepted = info.accepted.some((address) => {
+    const recipientAccepted = (info.accepted ?? []).some((address: string | { address: string }) => {
       const acceptedAddress = typeof address === "string" ? address : address.address;
       return acceptedAddress.toLowerCase() === to.toLowerCase();
     });
